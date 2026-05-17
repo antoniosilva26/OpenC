@@ -25,6 +25,15 @@ while True:
             (255, 0, 0),
             2
         )
+        cv2.putText (
+            frame, 
+            "Rosto Detectado",
+            (x + 40, y - 10),
+            cv2.FONT_HERSHEY_PLAIN,
+            0.7,
+            (0, 255, 0),
+            0
+        )
     cv2.imshow("Deteccao Facial", frame)
     if cv2.waitKey(1) == 27:
         break
